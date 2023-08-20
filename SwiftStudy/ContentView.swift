@@ -12,7 +12,12 @@ struct ContentView: View {
                     .font(.system(size: 20))
                     .padding([.bottom], 20)
                 
-                NavigationLink("Next") { NextView() }
+                // Page Navigation
+//                NavigationLink("Next") { NextView() }
+//                    .padding([.bottom], 20)
+                
+                // Sheet View Navigation
+                Button("Text") { isShowing.toggle() }
                     .padding([.bottom], 20)
                 
                 List {
